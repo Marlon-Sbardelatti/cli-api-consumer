@@ -39,7 +39,7 @@ async fn create_account() -> Result<(), Box<dyn std::error::Error>> {
     let url = "http://localhost:8000/users";
 
     println!("Insert username: ");
-    let name: String = read!();
+    let name: String = read!("{}\n");
     println!("Insert email: ");
     let email: String = read!();
     println!("Insert password: ");
@@ -170,7 +170,7 @@ async fn create_user() -> Result<(), Box<dyn std::error::Error>> {
     let url = "http://localhost:8000/users";
 
     println!("Insert username: ");
-    let name: String = read!();
+    let name: String = read!("{}\n");
     println!("Insert email: ");
     let email: String = read!();
     println!("Insert password: ");
